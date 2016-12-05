@@ -4,3 +4,17 @@
 .panel-primary {
 	height: 650px !important;
 }
+div.container nav.navbar-default {
+	background-color: #fa05ff !important;
+}
+.navbar-default .navbar-nav>li>a.bianco {
+	color: #fff !important;
+}
+.img-sole {
+	margin-top: 6%;
+	display: block;
+}
+.jumbo-nostro {
+	background-color: #6dede8;
+	min-height: 400px;
+}

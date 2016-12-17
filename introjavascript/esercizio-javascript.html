@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Esercizi Javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//var numero = 50; // valore numerico
+		var numero = window.prompt("Quanti erano i nani di Biancaneve?");
+		if (isNaN(numero)) {
+			document.write("<h4>Non è un numero, imbecille!</h4>");
+		}
+		else {
+			var ciccio = 10;
+			var lillo = 4;
+
+			if(numero != 7 && numero > lillo && numero < ciccio){
+				document.write("<p>SBAGLIATO!!!! Ci sei comunque andat* vicin*</p>");
+			}
+			else if(numero < lillo || numero > ciccio ) {
+				document.write("<p>SBAGLIATO!!!! E non ti sei neanche avvicinat*</p>");
+			}
+			else {
+				document.write("ESATTO!!!");
+			}
+		}
+		
+		var classe = ["Ilaria", "Alessandra", "Alessio", "Martina"];
+		if(numero == classe[3]) {
+			// Ricordate che JS è case-sensitive!!!
+			document.write("Cercavi " + classe[3] + "? ");
+		}
+
+		switch(numero) {
+			case "Ilaria":
+				document.write("Ilaria è il primo elemento di classe");
+			break;
+			case "Alessandra":
+				document.write("Alessandra è il secondo elemento di classe");
+			break;
+			case "Alessio":
+				document.write("Alessio è il terzo elemento di classe");
+			break;
+			default:
+				document.write("Bah!");
+			break;
+		}
+
+		var stringa = "Alessandra";
+		var arr = ["Ilaria", "Alessandra", "Alessio", "Martina"];
+		var obj = {
+			"nome" : "Ilaria",
+			"cognome" : "Carnevale",
+			"presente" : true
+		}; // questo è un oggetto
+		document.write("<p>" + obj.nome + " " + obj.cognome + "</p>");
+
+		var studenti = [
+			{
+				"nome" : "Ilaria",
+				"cognome" : "Carnevale",
+				"presente" : true
+			},
+			{
+				"nome" : "Cristina",
+				"cognome" : "De Luca",
+				"presente" : false
+			},
+			{
+				"nome" : "Giusi",
+				"cognome" : "Meligrana",
+				"presente" : false
+			},
+			{
+				"nome" : "Alessio",
+				"cognome" : "Murgia",
+				"presente" : true
+			}
+		];
+		document.write(studenti[1].nome);
+
+	</script>
+</body>
+</html>

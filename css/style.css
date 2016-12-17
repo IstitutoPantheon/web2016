@@ -18,3 +18,36 @@ div.container nav.navbar-default {
 	background-color: #6dede8;
 	min-height: 400px;
 }
+
+/*****************************
+Regola sulle pseudoclassi 
+*****************************/
+div.col-md-3:nth-child(2) .panel-heading {
+	background-color: yellow !important;
+}
+div.col-md-3:nth-last-child(2) .panel-heading {
+	background-color: brown !important;
+}
+div.col-md-3:first-child .panel-heading {
+	background-color: red !important;
+}
+div.col-md-3:last-child .panel-heading {
+	background-color: purple !important;
+}
+
+
+/*p:not(.margin30) {
+	font-size: 3em !important;
+}
+*/
+/*div:nth-of-type
+div:nth-last-of-type
+div:first-of-type
+div:last-of-type
+div:only-child*/
+
+a:hover {
+	font-weight: bolder !important;
+	color: red !important;
+	text-decoration: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seconda lezione su Javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/* Gli argomenti sono variabili che servono per il funzionamento
+		della funzione */
+		function ciao (nome, saluto) {
+			if (saluto !== true) {
+				document.write(nome + ", non ti saluto, sei morta!<br>");
+			}
+			else {
+				document.write("Ciao " + nome + "<br>");
+			}
+			
+		}
+
+		ciao("Diana", false);
+		ciao("Carlo", true);
+		ciao("William", true);
+
+
+		var studente1 = {
+			nome 		: "Gigio",
+			cognome 	: "Luttazzi",
+			anno 		: 2,
+			indirizzo 	: "Via dei martiri, 8"
+		};
+
+		function descriviStudente (studente) {
+			var text = "Lo studente " + studente.nome + " ";
+			text += studente.cognome + " abita in " + studente.indirizzo;
+
+
+			document.write(text);
+		}
+
+		descriviStudente(studente1);
+
+	</script>
+</body>
+</html>

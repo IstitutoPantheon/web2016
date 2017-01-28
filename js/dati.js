@@ -1,3 +1,10 @@
+// Parte il video
+$(document).ready(function(){
+	// il pezzo di pagina che ha come id 'overture'
+	//$('#overture').modal('show');
+});
+
+
 // Informazioni sui pianeti
 var mercurio = {
 	nome : "Mercurio",
@@ -27,11 +34,13 @@ function mostraDati(sistema) {
 		text += '<div class="panel-heading">';
 		text += '<h3 class="text-center">' + sistema[i].nome + '</h3></div>';
 		text += '<div class="panel-body">';
-		text += '<img src="' + sistema[i].img + '" class="img-responsive" alt="Mercurio" title="Mercurio">';
-		text += '<p class="margin30">' + sistema[i].testo + '<span  data-toggle="modal" data-target="#ciccioModal">Continua a leggere...</span></p>';
+		text += '<img src="' + sistema[i].img + '" class="img-responsive perContinuare" alt="Mercurio" title="Mercurio">';
+		text += '<p class="margin30">' + sistema[i].testo + '<br><span  data-toggle="modal" data-target="#ciccioModal">Continua a leggere...</span></p>';
 		text += '</div></div></div>';
 
 		// mostro quello che ho appena costruito
 		document.write(text);
 	}
 }
+
+$('.perContinuare').popover({placement: 'right'});

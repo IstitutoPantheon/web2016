@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'pippo';
+    src: url('../fonts/1942-webfont.eot');
+    src: url('../fonts/1942-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/1942-webfont.woff') format('woff'),
+         url('../fonts/1942-webfont.ttf') format('truetype'),
+         url('../fonts/1942-webfont.svg#1942_report1942_report') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h3 {
+	font-family: 'pippo';
+}
 .margin30 {
 	margin-top: 30px;
+	font-family: 'Fira Sans Condensed', sans-serif;
 }
 .panel-primary {
 	height: 650px !important;
@@ -16,7 +30,11 @@ div.container nav.navbar-default {
 }
 .jumbo-nostro {
 	background-color: #6dede8;
-	min-height: 400px;
+	/*min-height: 400px;*/
+	padding: 0 !important;
+}
+.jumbo-nostro img {
+	width: 100%;
 }
 
 /*****************************
@@ -56,4 +74,17 @@ a:hover {
 */
 .nascondi {
 	display: none;
+}
+
+#overture {
+	left: 8% !important;
+	top: 3% !important;
+}
+#overture .modal-dialog {
+	width: 900px !important;
+}
+
+body {
+	background-image: url('../img/bkground.jpg');
+	background-size: cover;
 }

@@ -5,6 +5,7 @@
 	<title>Il nostro Sistema Solare</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/dati.js"></script>
@@ -43,7 +44,48 @@
   			</div><!-- /.container-fluid -->
 		</nav>
 		<div class="jumbotron jumbo-nostro">
-  			<div class="col-md-6">
+			<div id="il-nostro-carosello" class="carousel slide" data-ride="carousel"
+			data-interval="6000">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#il-nostro-carosello" data-slide-to="0" class="active"></li>
+			    <li data-target="#il-nostro-carosello" data-slide-to="1"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img src="img/sole.jpg" alt="Il sole">
+			      <div class="carousel-caption">
+			        <h2>Il Sole</h2>
+			        <p>
+			        	Il Sole (dal latino: Sol) è la stella madre del sistema solare
+			        </p>
+			      </div>
+			    </div>
+
+			    <div class="item">
+			      <img src="img/sole.jpg" alt="Il sole - nuova immagine?">
+			      <div class="carousel-caption">
+			        <h2>Il Sole</h2>
+			        <p>
+			        	Attorno alla quale orbitano gli otto pianeti principali
+			        </p>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#il-nostro-carosello" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Precedente</span>
+			  </a>
+			  <a class="right carousel-control" href="#il-nostro-carosello" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Prossima</span>
+			  </a>
+			</div>
+  			<!-- <div class="col-md-6">
   				<img src="img/sole.jpg" class="img-responsive img-sole">
   			</div>
   			<div class="col-md-6">
@@ -51,7 +93,7 @@
   				<p>
   					Il Sole (dal latino: Sol) è la stella madre del sistema solare, attorno alla quale orbitano gli otto pianeti principali (tra cui la Terra), i pianeti nani, i loro satelliti, innumerevoli altri corpi minori e la polvere diffusa per lo spazio, che forma il mezzo interplanetario. La massa del Sole, che ammonta a circa 2 × 1030 kg, rappresenta da sola il 99,9% della massa complessiva del sistema solare.
   				</p>
-  			</div>
+  			</div> -->
 		</div>
 		<div class="row">
 			<div class="col-md-12">
@@ -59,6 +101,18 @@
 					mostraDati(sistema);
 				</script>
 			</div>
+
+			<div class="col-md-12" style="background: #fff !important;">
+				<h3 class="uppercase">update</h3>
+				<p>
+					Le informazioni su Mercurio sono state aggiornate. <a href="update-mercurio.html">Leggi qui per saperne di più</a>.
+				</p>
+			</div>
+
+
+
+
+
 			<div class="col-md-12">
 				<button class="mostra">Mostra</button>
 				<p class="nascondi">E gli altri pianeti?!?</p>
@@ -83,6 +137,25 @@
 		    </div>
 		  </div>
 		</div>
+
+
+		<!-- Seconda modale -->
+		<div class="modal fade" id="overture" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+      				<div class="modal-body">
+        				<iframe width="860" height="484" src="https://www.youtube.com/embed/PRqW3gDMWE8?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>
+      				</div>
+    			</div><!-- /.modal-content -->
+  			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+
+
+
+
+
 	</div>
 </body>
 <script type="text/javascript">
